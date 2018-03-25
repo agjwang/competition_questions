@@ -15,7 +15,6 @@ class Solution:
             cur.next = reverse
             reverse = cur
             cur = next
-            print(dummyNode.next.val)
 
         pre.next.next = cur
         pre.next = reverse
