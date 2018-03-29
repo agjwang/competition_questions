@@ -14,9 +14,8 @@ class Solution:
         if not root:
             return
         
-        temp = root.left
-        root.left = root.right
-        root.right = temp
-
+        root.left, root.right = root.right, root.left
         self.invertTree(root.left)
         self.invertTree(root.right)
+
+        return root
